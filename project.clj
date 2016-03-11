@@ -6,7 +6,10 @@
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/core.logic "0.8.10"]
                  [org.clojure/data.json "0.2.6"]
+
+                 ;; choose between two library...
                  [hickory "0.6.0"]
+                 [clj-tagsoup/clj-tagsoup "0.3.0" :exclusions [org.clojure/clojure]]
 
                  [com.codeborne/phantomjsdriver "1.2.1"
                   :exclusion [org.seleniumhq.selenium/selenium-java
