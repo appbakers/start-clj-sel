@@ -21,6 +21,8 @@
 
 (comment "START selenium server and driver and assign to `svr-and-drv` VAR")
 (def svr-and-drv (renew-local-svrdrv))
+(reachable? "127.0.0.1" 4444 5000)
+
 
 (comment "assign `grid-server` instance to `a-grid-server` VAR")
 (def a-grid-server (:grid-server svr-and-drv))
